@@ -79,7 +79,7 @@ const PostList = () => {
 
   if (createNewPost) {
     return (
-      <>
+      <div>
         <CreatePost
           saveTitleToState={saveTitleToState}
           saveContentToState={saveContentToState}
@@ -87,7 +87,7 @@ const PostList = () => {
           getContent={getContent}
           savePost={savePost}
         />
-      </>
+      </div>
     );
   } else if (isEditPost) {
     const post = allPosts.find((post) => {
@@ -106,7 +106,7 @@ const PostList = () => {
   }
 
   return (
-    <>
+    <div>
       <h2>All Posts</h2>
       {!allPosts.length ? (
         <div>
@@ -129,7 +129,7 @@ const PostList = () => {
       <br />
       <br />
       <button onClick={toggleCreateNewPost}>Create New Post</button>
-    </>
+    </div>
   );
 };
 

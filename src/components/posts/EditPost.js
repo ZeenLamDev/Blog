@@ -2,7 +2,7 @@ import React from "react";
 
 const EditPost = (props) => {
   return (
-    <>
+    <div>
       <form>
         <h1>Edit Post</h1>
         <input
@@ -22,7 +22,7 @@ const EditPost = (props) => {
         <br />
         <button onClick={props.updatePost}>Update Post</button>
       </form>
-    </>
+    </div>
   );
 };
 

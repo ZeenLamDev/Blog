@@ -1,8 +1,10 @@
 import React from "react";
 
+import { MyButton } from "../styles/Styles";
+
 const CreatePost = (props) => {
   return (
-    <>
+    <div>
       <form onSubmit={props.savePost}>
         <h1>Create New Post</h1>
         <input
@@ -20,9 +22,9 @@ const CreatePost = (props) => {
           ref={props.getContent}
         ></textarea>
         <br />
-        <button type="submit">Create Post</button>
+        <MyButton type="submit">Create Post</MyButton>
       </form>
-    </>
+    </div>
   );
 };
 
